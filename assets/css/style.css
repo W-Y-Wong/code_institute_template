@@ -24,6 +24,11 @@ h1, h2, h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+/* not deleting the words, meet up times, as it's a utility class-- i
+t helps search engine to rank our website higher */
+.hidden-heading {
+    display: none;
+}
 
 /* Header */
 header {
