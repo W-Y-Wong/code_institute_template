@@ -66,13 +66,15 @@ main {
     width: 90%;
     margin: 20px auto;
 }
-#reasons > h2 {
+#reasons h2 {
     text-transform: uppercase;
-    margin: 20px;
+    margin-bottom: 20px;
     font-size: 280%;
+    text-align: center;
 }
-#benefits {
+#benefits-physical>div, #benefit-mental>div {
     line-height: 20px;
+    margin-bottom: 20px;
 }
 #benefits hr {
     border-top: 1px solid #3a3a3a;
@@ -81,18 +83,27 @@ main {
 #benefits p {
     padding: 0 20px; 
 }
-#benefits-physical div{
-    margin: 20px;
-}
-#benefits-mental div{
-    margin: 20px;
-}
 /* Hero section */
 #hero {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
+}
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* Make the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #cover-text {
     /* Final rgba value (.7) sets the opacity so it is semi-transparent */
